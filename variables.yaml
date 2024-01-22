@@ -1,0 +1,10 @@
+MONGODB_HOST: mongodb.learninguser.shop  # submit your host
+REDIS_HOST: redis.learninguser.shop 
+MYSQL_HOST: mysql.learninguser.shop 
+RABBITMQ_HOST: rabbitmq.learninguser.shop 
+CATALOGUE_HOST: catalogue.learninguser.shop 
+USER_HOST: user.learninguser.shop 
+CART_HOST: cart.learninguser.shop 
+SHIPPING_HOST: shipping.learninguser.shop 
+PAYMENT_HOST: payment.learninguser.shop 
+DISPATCH_HOST: dispatch.learninguser.shop
