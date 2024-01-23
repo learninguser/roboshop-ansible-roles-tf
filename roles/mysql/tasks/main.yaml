@@ -19,7 +19,7 @@
 
 - name: Fetch root password
   set_fact:
-    mysql_password:  "{{ lookup('aws_ssm', '/roboshop/{{env}}/mysql_root_pass', region='us-east-1', decrypt=True ) }}"
+    mysql_password:  "{{ lookup('aws_ssm', '/roboshop/{{env}}/mysql_pass', region='us-east-1', decrypt=True ) }}"
 
 - name: setup root password
   ansible.builtin.command: "mysql_secure_installation --set-root-pass {{ mysql_password }}"
