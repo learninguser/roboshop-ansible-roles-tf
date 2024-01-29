@@ -2,9 +2,9 @@ MONGODB_HOST: mongodb-dev.learninguser.shop  # submit your host
 REDIS_HOST: redis-dev.learninguser.shop 
 MYSQL_HOST: mysql-dev.learninguser.shop 
 RABBITMQ_HOST: rabbitmq-dev.learninguser.shop 
-CATALOGUE_HOST: catalogue-dev.learninguser.shop 
-USER_HOST: user-dev.learninguser.shop 
-CART_HOST: cart-dev.learninguser.shop 
-SHIPPING_HOST: shipping-dev.learninguser.shop 
-PAYMENT_HOST: payment-dev.learninguser.shop 
-DISPATCH_HOST: dispatch-dev.learninguser.shop
+CATALOGUE_HOST: catalogue.app-dev.learninguser.shop 
+USER_HOST: user.app-dev.learninguser.shop 
+CART_HOST: cart.app-dev.learninguser.shop 
+SHIPPING_HOST: shipping.app-dev.learninguser.shop 
+PAYMENT_HOST: payment.app-dev.learninguser.shop 
+DISPATCH_HOST: dispatch.app-dev.learninguser.shop
