@@ -8,3 +8,5 @@ CART_HOST: cart.app-dev.learninguser.shop
 SHIPPING_HOST: shipping.app-dev.learninguser.shop 
 PAYMENT_HOST: payment.app-dev.learninguser.shop 
 DISPATCH_HOST: dispatch.app-dev.learninguser.shop
+NEXUS_URL: http://172.31.35.84:8081/repository
+GROUP_ID: com/roboshop

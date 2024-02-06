@@ -12,13 +12,25 @@
     path: /app
     state: directory
 
-- name: "download {{component}} application"
+# - name: "download {{component}} application"
+#   ansible.builtin.get_url:
+#     url: "https://roboshop-builds.s3.amazonaws.com/{{component}}.zip"
+#     dest: /tmp
+
+# - name: "extract {{component}} application"
+#   ansible.builtin.unarchive:
+#     src: "/tmp/{{component}}.zip"
+#     dest: /app
+#     remote_src: yes
+
+# http://18.232.68.100:8081/repository/catalogue/com/roboshop/catalogue/1.0.0/catalogue-1.0.0.zip
+- name: "download {{component}} application from nexus"
   ansible.builtin.get_url:
-    url: "https://roboshop-builds.s3.amazonaws.com/{{component}}.zip"
+    url: "{{NEXUS_URL}}/{{component}}/{{GROUP_ID}}/{{component}}/{{app_version}}/{{component}}-{{app_version}}.zip"
     dest: /tmp
 
 - name: "extract {{component}} application"
   ansible.builtin.unarchive:
-    src: "/tmp/{{component}}.zip"
+    src: "/tmp/{{component}}-{{app_version}}.zip"
     dest: /app
     remote_src: yes
